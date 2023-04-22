@@ -1,12 +1,11 @@
 import React from "react";
-
 import Slider from "react-slick";
 import img from "../../assets/img/imgShara.jpg";
 import img2 from "../../assets/img/imgVecislavas.jpg";
 import img3 from "../../assets/img/imgVecislavasTvi.jpg";
+import { Outlet } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import "./home.scss";
 export default function Home() {
   var settings = {
@@ -30,6 +29,8 @@ export default function Home() {
           <img src={img3} />
         </div>
       </Slider>
+      <Outlet />
+      
     </div>
   );
 }

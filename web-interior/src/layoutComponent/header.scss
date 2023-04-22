@@ -1,4 +1,9 @@
 $color: #f26822;
+@mixin responsive($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
 .wp-header {
   position: fixed;
   right: 0;
@@ -7,6 +12,9 @@ $color: #f26822;
   .wp-header-top {
     grid-template-columns: 25% 50% 20%;
     .wp-header-input {
+      @include responsive(768px) {
+        display: none;
+      }
       justify-items: center;
       align-items: center;
       height: 40px;
@@ -38,10 +46,15 @@ $color: #f26822;
     .wp-header-icon-end {
       justify-content: flex-end;
       align-items: center;
+
+      @include responsive(768px) {
+        justify-content: center;
+      }
       .header-icon-end-item {
         position: relative;
         font-size: 30px;
         margin: 0 5px;
+
         .img-flag {
           width: 30px;
           height: 30px;
@@ -65,11 +78,25 @@ $color: #f26822;
         }
       }
     }
+    .wp-iconPhone-rps {
+       display: none;
+      
+      @include responsive(768px) {
+        display: flex;
+        .phone-icon-header-rps{
+          font-size: 30px;
+         margin-top: 10px;
+        }
+      }
+    }
   }
   .wp-nav-header {
     justify-content: space-evenly;
     margin: 15px 0;
     align-items: center;
+    @include responsive(768px) {
+      justify-content: space-between;
+    }
     .wp-nav-header {
       font-size: 20px;
     }
@@ -77,8 +104,11 @@ $color: #f26822;
       color: $color;
     }
     .wp-iconPhone {
-        align-items: end;
-        
+      @include responsive(768px) {
+        display: none;
+      }
+      align-items: end;
+
       .phone-icon-header {
         font-size: 30px;
         margin-bottom: 5px;
@@ -86,4 +116,3 @@ $color: #f26822;
     }
   }
 }
-

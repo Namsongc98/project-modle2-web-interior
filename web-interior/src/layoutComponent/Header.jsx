@@ -9,7 +9,7 @@ import covietnam from "../assets/img/Co-Vietnam.webp";
 import "../layoutComponent/header.scss";
 export default function Header() {
   return (
-    <div className=" max-h-48 wp-header relative ">
+    <div className=" max-h-52 wp-header relative ">
       <div className="grid  wp-header-top">
         <img src={logo} alt="" className="w-64" />
         <div className=" wp-header-input">
@@ -18,7 +18,6 @@ export default function Header() {
             <BsSearch className="icon-header" />
           </div>
         </div>
-
         <ul className="flex wp-header-icon-end">
           <li className="header-icon-end-item">
             <BiUser />
@@ -34,34 +33,42 @@ export default function Header() {
             <img src={covietnam} className="img-flag" />
           </li>
         </ul>
+        <div className=" flex wp-iconPhone-rps">
+          {" "}
+          <BsPhone className="phone-icon-header-rps" />
+          <div>
+            <p className="text-sm">HOTLINE</p>
+            <p className="text-xl text-amber-500 ">12345678</p>
+          </div>
+        </div>
       </div>
-      <ul className="flex wp-nav-header">
-        <li className="">
+      <ul className="flex flex-wrap items-center  wp-nav-header">
+        <li className="scroll-mx-1">
           {" "}
           <NavLink to={"/"} style={{}} className={"wp-nav-header"}>
             Trang chủ
           </NavLink>{" "}
         </li>
-        <li className="">
+        <li className="scroll-mx-1">
           {" "}
           <NavLink to={"/listproduct"} style={{}} className={"wp-nav-header"}>
             Sản Phẩm
           </NavLink>{" "}
         </li>
-        <li className="">
+        <li className="scroll-mx-1">
           {" "}
           <NavLink to={"/spacesolusion"} style={{}} className={"wp-nav-header"}>
             Giải pháp không gian
           </NavLink>{" "}
         </li>
-        <li className="">
+        <li className="scroll-mx-1">
           {" "}
           <NavLink to={"/about"} style={{}} className={"wp-nav-header"}>
             {" "}
             About
           </NavLink>{" "}
         </li>
-        <li className="">
+        <li className="scroll-mx-1">
           {" "}
           <NavLink to={"/contact"} style={{}} className={"wp-nav-header"}>
             {" "}
@@ -70,7 +77,7 @@ export default function Header() {
         </li>
         <li className="flex wp-iconPhone">
           {" "}
-          <BsPhone className="phone-icon-header"/>
+          <BsPhone className="phone-icon-header" />
           <div>
             <p className="text-sm">HOTLINE</p>
             <p className="text-xl text-amber-500 ">12345678</p>
