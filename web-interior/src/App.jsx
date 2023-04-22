@@ -12,16 +12,18 @@ import Login from "./component/Form/Login";
 function App() {
   return (
     <>
-      <Header />
-      <Routes >
-        <Route path="/" element={<Home/>}/>
-        <Route path="/listproduct" element={<ListProduct/>}/>
-        <Route path="/spacesolusion" element={<SpaceSolution/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/contact" element={<Contact></Contact>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/register" element={<Login/>}/>
-      </Routes>
+      <div className="max-w-screen-xl  ">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/listproduct" element={<ListProduct />} />
+          <Route path="/spacesolusion" element={<SpaceSolution />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact></Contact>} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Login />} />
+        </Routes>
+      </div>
     </>
   );
 }

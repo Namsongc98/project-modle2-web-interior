@@ -1,0 +1,89 @@
+$color: #f26822;
+.wp-header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding: 0 30px;
+  .wp-header-top {
+    grid-template-columns: 25% 50% 20%;
+    .wp-header-input {
+      justify-items: center;
+      align-items: center;
+      height: 40px;
+      border: 3px solid $color;
+      border-radius: 25px;
+      padding: 2px;
+      display: flex;
+      width: 570px;
+      margin-top: 20px;
+      .input-header {
+        border: none;
+        outline: none;
+        margin-left: 10px;
+        width: 550px;
+        height: 33px;
+      }
+      .wp-icon-header {
+        background-color: $color;
+        height: 30px;
+        width: 93px;
+        border-radius: 0 25px 25px 0;
+        .icon-header {
+          color: white;
+          font-size: 20px;
+          margin: 5px auto;
+        }
+      }
+    }
+    .wp-header-icon-end {
+      justify-content: flex-end;
+      align-items: center;
+      .header-icon-end-item {
+        position: relative;
+        font-size: 30px;
+        margin: 0 5px;
+        .img-flag {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+        .cout-cart {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: $color;
+          .cout-cart-number {
+            position: absolute;
+            font-size: 18px;
+            top: -4px;
+            right: 5px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .wp-nav-header {
+    justify-content: space-evenly;
+    margin: 15px 0;
+    align-items: center;
+    .wp-nav-header {
+      font-size: 20px;
+    }
+    .wp-nav-header:hover {
+      color: $color;
+    }
+    .wp-iconPhone {
+        align-items: end;
+        
+      .phone-icon-header {
+        font-size: 30px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
