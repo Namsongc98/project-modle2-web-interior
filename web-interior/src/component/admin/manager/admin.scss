@@ -1,0 +1,73 @@
+$color: #f26822;
+
+.wp-manager {
+  margin-top: 50px;
+  border-top: 1px solid gainsboro;
+  border-left: 1px solid gainsboro;
+  min-height: 1400px;
+  .nav-left {
+    border-right: 1px solid gainsboro;
+    .nav-wp {
+      margin: 20px 20px auto 20px;
+      .nav-item {
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .nav-item:hover {
+        color: $color;
+      }
+    }
+  }
+  .nav-right {
+    padding: 30px;
+    width: 80%;
+  }
+}
+.wp-form {
+  border: 2px solid gainsboro;
+  padding: 20px;
+  width: 90%;
+  border-radius: 10px;
+  .wp-input {
+    margin-top: 15px;
+    .inputProduct {
+      width: 90%;
+      height: 30px;
+      border: 1px solid rgb(63, 63, 237);
+      margin-top: 10px;
+      border-radius: 6px;
+      padding-left: 4px;
+      outline: rgb(63, 63, 237);
+    }
+    .text-dctProduct {
+      border: 1px solid gainsboro;
+    }
+  }
+  .btn-submit {
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: 20px auto;
+    border: 1px solid gray;
+    border-radius: 3px;
+  }
+  .btn-submit:hover {
+    background-color: #f26822;
+    color: white;
+  }
+}
+.wp-imgProduct {
+  min-width: 190px;
+  max-height: 300px;
+  margin-left: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid gray;
+  .imgProduct {
+    width: 100%;
+  }
+}
+.th-titlePro {
+  border-bottom: 1px solid grey;
+}

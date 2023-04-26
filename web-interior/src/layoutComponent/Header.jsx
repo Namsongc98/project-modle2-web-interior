@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import { BiUser } from "react-icons/bi";
 import { BsCart4 } from "react-icons/bs";
@@ -21,6 +21,12 @@ export default function Header() {
         <ul className="flex wp-header-icon-end">
           <li className="header-icon-end-item">
             <BiUser />
+          </li>
+          <li>
+            <Link to={"/login"}> Đăng nhập</Link>
+          </li>
+          <li>
+            <Link to={"/register"}> Đăng kí</Link>
           </li>
 
           <li className="header-icon-end-item">
@@ -70,9 +76,9 @@ export default function Header() {
         </li>
         <li className="scroll-mx-1">
           {" "}
-          <NavLink to={"/contact"} style={{}} className={"wp-nav-header"}>
+          <NavLink to={"/admin/managerproduct"} style={{}} className={"wp-nav-header"}>
             {" "}
-            Kêt nối
+            Admin
           </NavLink>{" "}
         </li>
         <li className="flex wp-iconPhone">
