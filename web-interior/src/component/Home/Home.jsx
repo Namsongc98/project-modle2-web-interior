@@ -6,9 +6,9 @@ import img3 from "../../assets/img/imgVecislavasTvi.jpg";
 import imgNewsBeYourhop from "../../assets/img/News-BeYour-hop.jpg";
 import imgNewsBeYouracion from "../../assets/img/News-BeYour-acion.jpg";
 import NewsBeYour from "../../assets/img/News-BeYour.jpg";
-import dauAnmoi from "../../assets/img/dauAn-moi.jpg"
-import dauAnTre from "../../assets/img/dauAntre.jpg"
-import dauAntre from "../../assets/img/dauAn-tre.jpg"
+import dauAnmoi from "../../assets/img/dauAn-moi.jpg";
+import dauAnTre from "../../assets/img/dauAntre.jpg";
+import dauAntre from "../../assets/img/dauAn-tre.jpg";
 import { Outlet } from "react-router-dom";
 import imgProduct from "../../assets/img/giuongNgu.jpg.jpg";
 import "slick-carousel/slick/slick.css";
@@ -32,7 +32,7 @@ const products = [
     price: 200000,
   },
 ];
-const NewsBe = [
+const newsBeList = [
   {
     img: imgNewsBeYourhop,
     text: "Tưng bừng khai trương cửa hàng nội thất Beyour",
@@ -46,22 +46,22 @@ const NewsBe = [
     text: "Tưng bừng khai trương cửa hàng nội thất Beyour",
   },
 ];
-const DauAns =[{
-  image:dauAnTre,
-  text:"Từ cái tên cha gửi gắm ước mơ lớn"
 
-},
-{
-  image:dauAnmoi,
-  text:"Từ cái tên cha gửi gắm ước mơ lớn"
-
-},
-{
-  image:dauAntre,
-  text:"Từ cái tên cha gửi gắm ước mơ lớn"
-
-},
-]
+// mang data dấu ấn
+const imprints = [
+  {
+    image: dauAnTre,
+    text: "Từ cái tên cha gửi gắm ước mơ lớn",
+  },
+  {
+    image: dauAnmoi,
+    text: "Từ cái tên cha gửi gắm ước mơ lớn",
+  },
+  {
+    image: dauAntre,
+    text: "Từ cái tên cha gửi gắm ước mơ lớn",
+  },
+];
 const listImage = [img, img2, img3];
 export default function Home() {
   var settings = {
@@ -106,9 +106,8 @@ export default function Home() {
           <div className="block-title"></div>
         </div>
         <div className="grid wp-news">
-          {NewsBe.map((news,index ) => (
+          {newsBeList.map((news, index) => (
             <div key={index}>
-             
               <img src={news.img} />
               <h1>{news.text}</h1>
             </div>
@@ -122,10 +121,10 @@ export default function Home() {
           <div className="block-title"></div>
         </div>
         <div className="grid wp-news">
-          {DauAns.map((datadau,index ) => (
+          {imprints.map((item, index) => (
             <div key={index}>
-              <img src={datadau.image} />
-              <h1 className="font-semibold ">{datadau.text}</h1>
+              <img src={item.image} />
+              <h1 className="font-semibold ">{item.text}</h1>
             </div>
           ))}
         </div>

@@ -8,108 +8,36 @@
       "phone": "0912345678",
       "address": "Nam Định",
       "permission": 0
+    },
+    {
+      "name": "4wst",
+      "username": "rs",
+      "email": "ẻ",
+      "phone": "ẻẻ",
+      "website": "ẻg",
+      "id": 2
     }
   ],
   "products": [
     {
-      "id": 1,
-      "nameProduct": "",
-      "description": "",
-      "price": "",
-      "nameCategory ": "",
+      "nameProduct": "ewaF",
+      "description": "cgnh",
+      "price": "789",
+      "nameCategory": "",
       "rate": 5,
-      "imageUrl": null,
-      "quantityStock": 23
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fcong-tuoc-trang.jpg?alt=media&token=c5b4ff57-1a64-4d62-8074-385ec662715f",
+      "quantityStock": "789",
+      "id": 1
     },
     {
-      "nameProduct": "fvr",
-      "description": "evythdv",
-      "price": "3245",
-      "nameCategory": "Phòng bếp",
-      "imageUrl": null,
-      "quantityStock": "2563456",
+      "nameProduct": "123",
+      "description": "ưatz",
+      "price": "123",
+      "nameCategory": "",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fcong-tuoc-trang.jpg?alt=media&token=016875c6-bd07-489b-ab0e-64195797ac4c",
+      "quantityStock": "123",
       "id": 2
-    },
-    {
-      "nameProduct": "cưvwtw",
-      "description": " rthy",
-      "price": "43545",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fbinh-hoa.jpg?alt=media&token=0b0526a8-5d9f-4600-b75c-e73d598dee9d",
-      "quantityStock": "32456",
-      "id": 3
-    },
-    {
-      "nameProduct": "name",
-      "description": "như cuc",
-      "price": "540000",
-      "nameCategory": "Phòng bếp",
-      "rate": 5,
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fbinh-hoa-rong.jpg?alt=media&token=45b4e38d-7a78-4823-a189-b2ebcf3db98f",
-      "quantityStock": "67",
-      "id": 4
-    },
-    {
-      "nameProduct": "svrv",
-      "description": "vdg",
-      "price": "53546",
-      "rate": 5,
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fbinh-hoa-rong.jpg?alt=media&token=063f593a-0e96-4610-b5c8-d9cb52fdf092",
-      "quantityStock": "3456356",
-      "id": 5
-    },
-    {
-      "nameProduct": "svrv",
-      "description": "vdg",
-      "price": "53546",
-      "rate": 5,
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fbinh-hoa-rong.jpg?alt=media&token=4523aa50-706f-4367-ace9-977b044dc794",
-      "quantityStock": "3456356",
-      "id": 6
-    },
-    {
-      "nameProduct": "svrv",
-      "description": "vdg",
-      "price": "53546",
-      "rate": 5,
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fbinh-hoa-rong.jpg?alt=media&token=7b906033-c3ad-46d7-9cc6-12542838dd92",
-      "quantityStock": "3456356",
-      "id": 7
-    },
-    {
-      "nameProduct": "svrv",
-      "description": "vdg",
-      "price": "53546",
-      "rate": 5,
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fbinh-hoa-rong.jpg?alt=media&token=9d862ebc-1fef-4789-ae81-9803b090bf70",
-      "quantityStock": "3456356",
-      "id": 8
-    },
-    {
-      "nameProduct": "svrv",
-      "description": "vdg",
-      "price": "53546",
-      "rate": 5,
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fbinh-hoa-rong.jpg?alt=media&token=5facdbeb-3db2-47a1-84c5-2f771591a1d3",
-      "quantityStock": "3456356",
-      "id": 9
-    },
-    {
-      "nameProduct": "vtrt",
-      "description": "vst",
-      "price": "3656",
-      "rate": 5,
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fbinh-hoa-rong.jpg?alt=media&token=b5934f00-3040-47ea-b58d-25785655ccb0",
-      "quantityStock": "3656",
-      "id": 10
-    },
-    {
-      "nameProduct": "vtrt",
-      "description": "vst",
-      "price": "3656",
-      "rate": 5,
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fbinh-hoa-rong.jpg?alt=media&token=e97e5550-4718-4b4a-a37b-11044f1bbbf4",
-      "quantityStock": "3656",
-      "id": 11
     }
   ],
   "Categories": [

@@ -1,13 +1,10 @@
 $color: #f26822;
 
-
-
 .block-title{
     width: 40%;
     height: 10px;
     border-top: 2px solid grey ;
     border-bottom: 2px solid grey ;
-  
 }
 .wp-product{
     grid-template-columns: auto auto auto auto;
@@ -22,7 +19,6 @@ $color: #f26822;
         width: 100%;
         border: solid 2px $color;
         height: 35px;
-    
     }
     .btn-ProductBuy:hover{
         background-color: $color;
