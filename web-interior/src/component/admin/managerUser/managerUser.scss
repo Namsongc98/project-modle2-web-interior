@@ -1,0 +1,40 @@
+.table-Cart {
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+  }
+  .table-Cart td,
+  .table-Cart th {
+    font-size: 16px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    .wp-btnCart {
+      display: flex;
+      width: 200px;
+      margin: 0 auto;
+      justify-content: space-between;
+      border: 1px solid #ea580c;
+      .btn-CartPlus {
+        width: 50px;
+        border-left: 1px solid #ea580c;
+        cursor: pointer;
+      }
+      .btn-Cart {
+        width: 50px;
+        border-right: 1px solid #ea580c;
+        cursor: pointer;
+      }
+    }
+  }
+  .table-Cart tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .table-Cart th {
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+  }

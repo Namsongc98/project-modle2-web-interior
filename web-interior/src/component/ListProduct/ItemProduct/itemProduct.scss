@@ -22,9 +22,11 @@ $color: #f26822;
     height: 40px;
     border: 2px solid $color;
     margin: 20px 4px 0 4px;
+    
   }
   .btn-product:hover {
     background-color: $color;
+    color: white;
   }
 }
 .ProducItem:hover{

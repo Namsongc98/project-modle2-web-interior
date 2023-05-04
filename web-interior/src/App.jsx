@@ -15,6 +15,8 @@ import ManagerUser from "./component/admin/managerUser/managerUser";
 import ManagerOrder from "./component/admin/manager/managerOrder/managerOrder";
 import ManagerProduct from "./component/admin/manager/managerProduct/managerProduct";
 import EditProduct from "./component/admin/manager/managerProduct/editProduct";
+import CartProduct from "./component/cartProduct/cartProduct";
+import DetailProduct from "./component/detailProduct/DetailProduct";
 function App() {
   return (
     <>
@@ -22,13 +24,20 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-
           <Route path="/listproduct" element={<ListProduct />} />
           <Route path="/spacesolusion" element={<SpaceSolution />} />
           <Route path="/about" element={<About />} />
+          <Route path="/cartproduct/detailproduct/:id" element={<DetailProduct />} />
+          
+          <Route path="/cartproduct" element={<CartProduct/>} />
           <Route path="/admin" element={<Admin />}>
-            <Route exact path="/admin/managerproduct/editproduct/:id" element={<EditProduct/>} />
             <Route
+              exact
+              path="/admin/managerproduct/editproduct/:id"
+              element={<EditProduct />}
+            />
+            <Route
+              index
               path="/admin/managerproduct"
               element={<ManagerProduct />}
             />

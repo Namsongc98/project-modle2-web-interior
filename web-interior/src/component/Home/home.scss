@@ -1,33 +1,68 @@
 $color: #f26822;
-
-.block-title{
-    width: 40%;
-    height: 10px;
-    border-top: 2px solid grey ;
-    border-bottom: 2px solid grey ;
+@mixin responsive($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
 }
-.wp-product{
-    grid-template-columns: auto auto auto auto;
-    gap: 20px;
-    .imgProduct{
-        margin: 0 auto;
-    }
-    .color{
-        color: $color;
-    }
-    .btn-ProductBuy{
-        width: 100%;
-        border: solid 2px $color;
-        height: 35px;
-    }
-    .btn-ProductBuy:hover{
-        background-color: $color;
-        color: white;
-    }
-}
-.wp-news{
-    grid-template-columns: auto auto auto;
-    gap: 30px;
-    margin-top: 20px;
+.block-title {
+  width: 40%;
+  height: 10px;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
 }
 
+
+.wp-product-home {
+  margin-top: 50px;
+
+  
+  gap: 20px;
+
+  .imgProduct {
+    margin: 0 auto;
+  }
+  .color {
+    color: $color;
+  }
+  .btn-ProductBuy {
+    width: 100%;
+    border: solid 2px $color;
+    height: 35px;
+  }
+  .btn-ProductBuy:hover {
+    background-color: $color;
+    color: white;
+  }
+}
+
+@include responsive(768px) {
+  .categoriesRepon {
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+  }
+}
+
+.wp-news {
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  margin-top: 20px;
+}
+.productCategory:hover{
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+.wp-product-title {
+  margin: 0 auto;
+  .wp-img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+  }
+  .title-product {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 500;
+  }
+}

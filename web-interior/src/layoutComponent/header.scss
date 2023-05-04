@@ -54,7 +54,28 @@ $color: #f26822;
         position: relative;
         font-size: 30px;
         margin: 0 5px;
-
+        .wp-cart {
+          position: absolute;
+          z-index: 999;
+          right: -10px;
+          border-radius: 10px;
+          border: 1px solid gray;
+          padding: 8px;
+          background-color: white;
+         .wp-product-cart{
+          border-bottom : 1px solid gray;
+        }
+        .link-cart{
+          width: 70%;
+          margin: 8px auto;
+          height: 20px;
+          background-color: #f26822;
+          color: white;
+          line-height: 20px;
+          font-size: 0.7rem;
+          border-radius: 4px;
+        }
+        }
         .img-flag {
           width: 30px;
           height: 30px;
@@ -76,16 +97,30 @@ $color: #f26822;
             color: white;
           }
         }
+
+        .wp-form {
+          position: absolute;
+          border: 1px solid rgb(172, 171, 171);
+          border-radius: 5px;
+          padding: 10px;
+          width: 150px;
+          background-color: white;
+          font-size: 1.4rem;
+          right: -10px;
+          .item-form {
+            border-bottom: 1px solid rgb(172, 171, 171);
+          }
+        }
       }
     }
     .wp-iconPhone-rps {
-       display: none;
-      
+      display: none;
+
       @include responsive(768px) {
         display: flex;
-        .phone-icon-header-rps{
+        .phone-icon-header-rps {
           font-size: 30px;
-         margin-top: 10px;
+          margin-top: 10px;
         }
       }
     }

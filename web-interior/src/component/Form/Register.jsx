@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { AiFillCloseCircle } from "react-icons/ai";
-import { TiTick } from "react-icons/ti";
+
 import axios from "axios";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
   const [userName, setUserName] = useState("");
@@ -9,25 +10,59 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
+  const [dataUser, setDataUser] = useState([]);
 
-  // check username
+  //error
+  const [errUserName, setErrUserName] = useState("");
+  const [errEmail, setErrEmail] = useState("");
+  const [errPassword, setErrPassword] = useState("");
+  const [errAddress, setErrAddress] = useState("");
+  const [errPhone, setErrPhone] = useState("");
+
+  //regex
   const userNameRegex = /^[a-zA-Z0-9_\s]{8,}$/;
   const chexRegexName = userNameRegex.test(userName);
-  //check email
   const userEmailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const checkEmail = userEmailRegex.test(email);
-  //check password
   const userPasswordRegex = /^[a-zA-Z0-9]{8,}$/;
   const checkPassword = userPasswordRegex.test(password);
 
-  //check phone
-  const phoneRegex = /^[0-9]{10,}$/;
-  const checkPhone = phoneRegex.test(phone);
-  
+  //call api
+  const dataUserApi = async () => {
+    await axios
+      .get("http://localhost:3000/users")
+      .then((response) => setDataUser(response.data))
+      .catch((err) => console.log(err));
+  };
+  useEffect(() => {
+    dataUserApi();
+  }, []);
 
+  let checkEmailApi;
+  if (dataUser.length > 0) {
+    checkEmailApi = dataUser.some((item) => item.email === email);
+  }
+  
+  
+const navigate = useNavigate()
   const handleSumit = (event) => {
     event.preventDefault();
-    if (userNameRegex && checkEmail && checkPassword && checkPhone && address) {
+
+    //validate userName
+    !userName && setErrUserName("Mời bạn nhập tên");
+    !email && setErrEmail("Mời bạn nhập Email");
+    !password &&
+      setErrPassword("Mời bạn nhập mật khẩu ,mật khẩu không chứa dấu cách ");
+    !address && setErrAddress("Mời bạn nhập Địa chỉ");
+    !phone && setErrPhone("Mời bạn nhập Số điện thoại");
+
+    if (
+      chexRegexName &&
+      checkEmail &&
+      checkPassword &&
+      address &&
+      !checkEmailApi
+    ) {
       axios
         .post("http://localhost:3000/users", {
           userName: userName,
@@ -35,13 +70,12 @@ export default function Register() {
           password: password,
           phone: phone,
           address: address,
+          permission: 1
         })
-        .then((res) => console.log(res.data))
+      
         .catch((err) => console.log(err));
-      window.location.href = "/";
-    } else {
-      alert("đăng nhập thất bại");
-    }
+        navigate("/")
+    } 
   };
 
   return (
@@ -61,14 +95,6 @@ export default function Register() {
                 className="flex text-sm font-medium leading-6 text-gray-900 justify-between "
               >
                 Họ và tên
-                {!chexRegexName ? (
-                  <div className="flex items-center">
-                    <AiFillCloseCircle className="text-rose-500" />
-                    <p className="">Mời nhập tên đầy đủ</p>
-                  </div>
-                ) : (
-                  <TiTick className="text-green-500" />
-                )}
               </label>
               <div className="mt-2">
                 <input
@@ -80,6 +106,11 @@ export default function Register() {
                   className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
+              {!userName ? (
+                <span style={{ color: "red" }}>{errUserName} </span>
+              ) : (
+                <></>
+              )}
             </div>
             <div>
               <label
@@ -87,14 +118,6 @@ export default function Register() {
                 className="flex text-sm font-medium leading-6 text-gray-900 justify-between"
               >
                 Email
-                {!checkEmail ? (
-                  <div className="flex items-center">
-                    <AiFillCloseCircle className="text-rose-500" />
-                    <p className="">Nhập đúng định dạng email</p>
-                  </div>
-                ) : (
-                  <TiTick className="text-green-500" />
-                )}
               </label>
               <div className="mt-2">
                 <input
@@ -107,6 +130,16 @@ export default function Register() {
                   className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
+              {!email ? (
+                <span style={{ color: "red" }}>{errEmail}</span>
+              ) : (
+                <></>
+              )}
+              {checkEmailApi ? (
+                <span style={{ color: "red" }}>Trùng Email </span>
+              ) : (
+                <></>
+              )}
             </div>
 
             <div>
@@ -116,14 +149,6 @@ export default function Register() {
                   className="flex w-full justify-between text-sm  font-medium leading-6 text-gray-900 "
                 >
                   <div>Mật khẩu</div>
-                  {!checkPassword ? (
-                    <div className="flex items-center ">
-                      <AiFillCloseCircle className="text-rose-500" />
-                      <p className="">Mật khẩu hơn 8 kí tự</p>
-                    </div>
-                  ) : (
-                    <TiTick className="text-green-500" />
-                  )}
                 </label>
               </div>
               <div className="mt-2">
@@ -137,6 +162,11 @@ export default function Register() {
                   className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
+              {!password || !checkPassword ? (
+                <span style={{ color: "red" }}>{errPassword}</span>
+              ) : (
+                <></>
+              )}
             </div>
 
             <div>
@@ -144,15 +174,8 @@ export default function Register() {
                 htmlFor="phone"
                 className="flex justify-between text-sm font-medium leading-6 text-gray-900"
               >
-                Phone
-                {!checkPhone ? (
-                  <div className="flex items-center">
-                    <AiFillCloseCircle className="text-rose-500" />
-                    <p className="">Mời nhập đầy đủ thông tin</p>
-                  </div>
-                ) : (
-                  <TiTick className="text-green-500" />
-                )}
+                       Phone
+                
               </label>
               <div className="mt-2  ">
                 <input
@@ -165,6 +188,12 @@ export default function Register() {
                   className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
+       
+                {!phone ? (
+                  <span style={{ color: "red" }}>{errPhone}</span>
+                ) : (
+                  <></>
+                )}
             </div>
             <div>
               <label
@@ -172,14 +201,7 @@ export default function Register() {
                 className="flex justify-between text-sm font-medium leading-6 text-gray-900"
               >
                 Địa chỉ
-                {!address ? (
-                  <div className="flex items-center">
-                    <AiFillCloseCircle className="text-rose-500" />
-                    <p className="">Mời nhập đầy đủ thông tin</p>
-                  </div>
-                ) : (
-                  <TiTick className="text-green-500" />
-                )}
+               
               </label>
               <div className="mt-2  ">
                 <textarea
@@ -191,6 +213,11 @@ export default function Register() {
                   className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
+              {!address ? (
+                  <span style={{ color: "red" }}>{errAddress}</span>
+                ) : (
+                  <></>
+                )}
             </div>
 
             <div>

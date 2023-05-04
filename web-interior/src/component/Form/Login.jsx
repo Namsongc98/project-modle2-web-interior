@@ -1,23 +1,56 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { AppContext } from "../context/AppContext";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  //todo: xu ly logic sau
-  const handleSumbmit = () => {};
 
-  const dataUserName = async (e) => {
-    const dataName = await axios
-      .get("http://localhost:3000/users/")
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => console.log(err));
+  const [errEmail, setErrEmail] = useState([]);
+  const [errPassword, setErrPassword] = useState([]);
+  const [wrongEmail, setWrongEmail] = useState([]);
+  const [wrongPassword, setWrongPassword] = useState([]);
+  const { dataUser,dataUserLocal } = useContext(AppContext);
+  
+
+  const isLogin = {
+    email,
+    password,
   };
-  useEffect(() => {
-    dataUserName();
-  }, []);
+
+  const checkEmail = dataUser.some((item) => {
+    return item.email === email;
+  });
+  const checkPassword = dataUser.some((item) => {
+    return item.password === password;
+  });
+  const checkPermission = dataUser.find((item) => {
+    return item.email === email;
+  });
+
+  const navigate = useNavigate();
+
+  const handleSumbmit = (e) => {
+    e.preventDefault();
+
+    !email && setErrEmail("Mời nhập Email");
+    !password && setErrPassword("Mời nhập mật khẩu");
+    !checkEmail && setWrongEmail("Bạn nhập không đúng Email");
+    !checkPassword && setWrongPassword("Bạn nhập không đúng mật khẩu");
+
+    if (checkEmail && checkPassword) {
+        dataUserLocal.push(isLogin);
+        localStorage.setItem("dataUserLocal", JSON.stringify(dataUserLocal));
+       if (checkPermission.permission === 0) {
+        navigate("/admin/managerproduct");
+      } else if (checkPermission.permission === 1) {
+        navigate("/");
+      }
+    } else {
+      alert("đăng nhập thất bại");
+    }
+  };
   return (
     <div>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -34,8 +67,9 @@ export default function Login() {
                 htmlFor="email"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Email address
+                Email
               </label>
+
               <div className="mt-2">
                 <input
                   id="email"
@@ -46,6 +80,17 @@ export default function Login() {
                   className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
+              {!email ? (
+                <span style={{ color: "red" }}>{errEmail}</span>
+              ) : (
+                <></>
+              )}
+              <br />
+              {!checkEmail ? (
+                <span style={{ color: "red" }}>{wrongEmail}</span>
+              ) : (
+                <></>
+              )}
             </div>
 
             <div>
@@ -54,7 +99,7 @@ export default function Login() {
                   htmlFor="password"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Password
+                  Mật khẩu
                 </label>
               </div>
               <div className="mt-2">
@@ -67,6 +112,17 @@ export default function Login() {
                   className="block w-full px-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
+              {!password ? (
+                <span style={{ color: "red" }}>{errPassword}</span>
+              ) : (
+                <></>
+              )}
+              <br />
+              {!checkPassword ? (
+                <span style={{ color: "red" }}>{wrongPassword}</span>
+              ) : (
+                <></>
+              )}
             </div>
 
             <div>
@@ -74,7 +130,7 @@ export default function Login() {
                 type="submit"
                 className="flex w-full  justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Sign in
+                Đăng Nhập
               </button>
             </div>
           </form>

@@ -70,7 +70,8 @@ $color: #f26822;
   background-color: #f5f5f5;
 }
 .wp-product {
-  max-height: 400px;
+  
+  max-height: 700px;
   border-radius: 8px;
   border: 1px solid gainsboro;
   overflow-y: scroll;
@@ -106,3 +107,45 @@ $color: #f26822;
     }
   }
 }
+// .bg-wpEdit{
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   .wp-formEdit{
+//     border: 2px solid gainsboro;
+//     padding: 20px;
+//     width: 50%;
+//     border-radius: 10px;
+//     margin-top: 10%;
+//     margin-left: 20%;
+//     .wp-input {
+//       margin-top: 15px;
+//       .inputProduct {
+//         width: 90%;
+//         height: 30px;
+//         border: 1px solid gainsboro;
+//         margin-top: 10px;
+//         border-radius: 6px;
+//         padding-left: 4px;
+        
+//       }
+//       .text-dctProduct {
+//         border: 1px solid gainsboro;
+//       }
+//     }
+//     .btn-submit {
+//       display: block;
+//       width: 150px;
+//       height: 30px;
+//       margin: 20px auto;
+//       border: 1px solid grey;
+//       border-radius: 3px;
+//     }
+//     .btn-submit:hover {
+//       background-color: #f26822;
+//       color: white;
+//     }
+//   }
+// }

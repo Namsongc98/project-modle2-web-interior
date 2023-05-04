@@ -10,56 +10,21 @@
       "permission": 0
     },
     {
-      "name": "4wst",
-      "username": "rs",
-      "email": "ẻ",
-      "phone": "ẻẻ",
-      "website": "ẻg",
-      "id": 2
-    }
-  ],
-  "products": [
-    {
-      "nameProduct": "ewaF",
-      "description": "cgnh",
-      "price": "789",
-      "nameCategory": "",
-      "rate": 5,
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fcong-tuoc-trang.jpg?alt=media&token=c5b4ff57-1a64-4d62-8074-385ec662715f",
-      "quantityStock": "789",
-      "id": 1
+      "userName": "namson9876",
+      "email": "namsongc98@gmail.com",
+      "password": "namson98",
+      "phone": "122335546345",
+      "address": "hà nội",
+      "permission": 1,
+      "id": 3
     },
     {
-      "nameProduct": "123",
-      "description": "ưatz",
-      "price": "123",
-      "nameCategory": "",
-      "rate": 5,
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fcong-tuoc-trang.jpg?alt=media&token=016875c6-bd07-489b-ab0e-64195797ac4c",
-      "quantityStock": "123",
-      "id": 2
-    }
-  ],
-  "Categories": [
-    {
-      "id": 1,
-      "nameCategory ": "Phòng khách",
-      "imgCategory": ""
-    },
-    {
-      "id": 2,
-      "nameCategory ": "Phòng bếp",
-      "imgCategory": ""
-    },
-    {
-      "id": 3,
-      "nameCategory ": "Phòng ngủ",
-      "imgCategory": ""
-    },
-    {
-      "id": 4,
-      "nameCategory ": "Phòng làm việc",
-      "imgCategory": ""
+      "userName": "userTest123",
+      "email": "userTest123@gmail.com",
+      "password": "12345678",
+      "phone": "123456789",
+      "address": "đau cũng được",
+      "id": 4
     }
   ],
   "Orders": [
@@ -75,6 +40,640 @@
       "order_id": 1,
       "product_id": 1,
       "quantity": 2
+    }
+  ],
+  "products": [
+    {
+      "nameProduct": "Bán kính phòng khách",
+      "description": "Bàn kính chân bằng gỗ",
+      "price": "4500000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-khach%20(2).jpg?alt=media&token=15bd2fdd-dc89-4068-b0cb-4519eb6dc803",
+      "quantityStock": "23",
+      "id": 1
+    },
+    {
+      "nameProduct": "Bàn khách gỗ",
+      "description": "Bàn phòng khách bằng gỗ",
+      "price": "4300000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-khach.jpg?alt=media&token=248acb56-a66c-4b1f-b5e0-e131b39fd907",
+      "quantityStock": "25",
+      "id": 2
+    },
+    {
+      "nameProduct": "Bàn khách gỗ da",
+      "description": "Bàn phòng khách bằng gỗ bọc da",
+      "price": "5300000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-khach-3.jpg?alt=media&token=fa9c0d1d-bac2-47a0-a5ab-25031a7f6829",
+      "quantityStock": "24",
+      "id": 3
+    },
+    {
+      "nameProduct": "Bàn khách kính da",
+      "description": "Bàn phòng khách bằng gỗ mặt bàn bằng kính",
+      "price": "2300000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-khach4.jpg?alt=media&token=355141d5-8ca4-46f1-86bc-ff92a7b74a4a",
+      "quantityStock": "27",
+      "id": 4
+    },
+    {
+      "nameProduct": "ghế sòa",
+      "description": "màu tím",
+      "price": "2200000",
+      "nameCategory": "",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fghe-sofa-khach.jpg?alt=media&token=c912333d-1e78-490d-98c3-ccd96f5c2aa5",
+      "quantityStock": "20",
+      "id": 5
+    },
+    {
+      "nameProduct": "Ghế Sofa phòng khách  ",
+      "description": "Ghế Sofa phòng khách êm màu nâu",
+      "price": "5300000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fghe-sofa-khach2.jpg?alt=media&token=cbfc0a62-bcac-4b29-beec-900225d4b21d",
+      "quantityStock": "26",
+      "id": 6
+    },
+    {
+      "nameProduct": "Ghế Sofa phòng khách  ",
+      "description": "Ghế Sofa phòng khách êm màu tím",
+      "price": "7300000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fghe-sofa-khach-3.jpg?alt=media&token=808aa2b4-e1a8-4601-8467-8389bb6a9fea",
+      "quantityStock": "24",
+      "id": 7
+    },
+    {
+      "nameProduct": "Kệ tivi phòng khách  ",
+      "description": "Kệ Tivi phòng khách  nhỏ gọn",
+      "price": "4300000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-ti-vi1.jpg?alt=media&token=0954122f-424b-4ad7-81d2-5f7384f3f144",
+      "quantityStock": "24",
+      "id": 8
+    },
+    {
+      "nameProduct": "Kệ tivi phòng khách  ",
+      "description": "Kệ Tivi phòng khách  nhỏ gọn",
+      "price": "4700000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-ti-vi2.jpg?alt=media&token=1b750ecc-97fe-40c2-88c1-562dbde50197",
+      "quantityStock": "23",
+      "id": 9
+    },
+    {
+      "nameProduct": "Kệ tivi phòng khách  ",
+      "description": "Kệ Tivi phòng khách  nhỏ gọn trắng",
+      "price": "5000000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-ti-vi3.jpg?alt=media&token=4c97ff47-7269-42d1-a8e3-c8aea890ffe4",
+      "quantityStock": "27",
+      "id": 10
+    },
+    {
+      "nameProduct": "Kệ tivi phòng khách  ",
+      "description": "Kệ Tivi phòng khách  nhỏ gọn ",
+      "price": "4200000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-ti-vi4.jpg?alt=media&token=46ffabcb-8346-4ba0-9d5c-2ff773b6f50c",
+      "quantityStock": "24",
+      "id": 11
+    },
+    {
+      "nameProduct": "Ghế sòa phòng khách  ",
+      "description": "Ghế phòng khách  nhỏ gọn ",
+      "price": "4200000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fsofa-khach.jpg?alt=media&token=e68f4489-64d2-47e7-8e63-fcafe7713202",
+      "quantityStock": "23",
+      "id": 12
+    },
+    {
+      "nameProduct": "Tủ phòng khách  ",
+      "description": "tủ phòng khách  nhỏ gọn ",
+      "price": "4200000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Ftu-khach.jpg?alt=media&token=1276da2a-2675-4da1-9e74-c3be5a6b8a02",
+      "quantityStock": "23",
+      "id": 13
+    },
+    {
+      "nameProduct": "Tủ phòng khách  ",
+      "description": "tủ phòng khách  nhỏ gọn ",
+      "price": "4200000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Ftu-khach-2.jpg?alt=media&token=3e2e2fb5-a254-4679-809b-9a34387fde36",
+      "quantityStock": "22",
+      "id": 14
+    },
+    {
+      "nameProduct": "Tủ phòng khách  ",
+      "description": "tủ phòng khách  nhỏ gọn ",
+      "price": "4200000",
+      "nameCategory": "Phòng khách",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Ftu-khach3.jpg?alt=media&token=2e5ea269-d112-45aa-a78f-4db42c3a7cff",
+      "quantityStock": "22",
+      "id": 15
+    },
+    {
+      "nameProduct": "Bàn Ăn",
+      "description": "bàn bằng gỗ bền sạch",
+      "price": "1199999",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-an.jpg?alt=media&token=e21ee3f8-f399-40c0-b7ec-80a38caf3420",
+      "quantityStock": "23",
+      "id": 16
+    },
+    {
+      "nameProduct": "Bàn Ăn lớn",
+      "description": "bàn bằng gỗ bền sạch cỡ lớn màu đen",
+      "price": "1200000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-an1.jpg?alt=media&token=f22e3e75-208a-4464-875e-a1f11732f2bd",
+      "quantityStock": "24",
+      "id": 17
+    },
+    {
+      "nameProduct": "Bàn Ăn nhỏ",
+      "description": "bàn bằng gỗ bền sạch cỡ nhỏ màu trắng",
+      "price": "900000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-an2.jpg?alt=media&token=b63e9805-1852-449a-9389-cce8d53c8a3a",
+      "quantityStock": "30",
+      "id": 18
+    },
+    {
+      "nameProduct": "Bàn Ăn nhỏ",
+      "description": "bàn bằng gỗ bền sạch cỡ nhỏ màu trắng phù hợp không gian nhỏ",
+      "price": "800000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-an3.jpg?alt=media&token=752684bc-487d-48d3-ac5e-49cd9ff9e405",
+      "quantityStock": "35",
+      "id": 19
+    },
+    {
+      "nameProduct": "Kệ Bếp nhỏ",
+      "description": "kệ bằng gỗ bền sạch màu trắng phù hợp không gian nhỏ",
+      "price": "700000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-bep.jpg?alt=media&token=38c1a84c-5440-4f87-8125-db3f02a2cb5b",
+      "quantityStock": "45",
+      "id": 20
+    },
+    {
+      "nameProduct": "Kệ Lò vi sóng",
+      "description": "kệ bằng gỗ bền sạch phù hợp không gian nhỏ",
+      "price": "730000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-lo-vi-song.jpg?alt=media&token=8e3c160e-0dc9-45df-b296-ba6c81fe5435",
+      "quantityStock": "35",
+      "id": 21
+    },
+    {
+      "nameProduct": "Kệ Lò vi sóng",
+      "description": "kệ bằng gỗ bền sạch phù hợp không gian nhỏ",
+      "price": "780000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-lo-vi-song1.jpg?alt=media&token=0849b2dd-6dbf-4316-8a26-83a23c98784c",
+      "quantityStock": "32",
+      "id": 22
+    },
+    {
+      "nameProduct": "Kệ Lò vi sóng",
+      "description": "kệ bằng gỗ bền sạch phù hợp không gian nhỏ màu trắng",
+      "price": "750000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-lo-vi-song2.jpg?alt=media&token=a886ba43-e170-4db8-9d63-a5c476560838",
+      "quantityStock": "34",
+      "id": 23
+    },
+    {
+      "nameProduct": "Quầy bếp ",
+      "description": "kệ bằng gỗ bền sạch phù hợp không gian nhỏ màu trắng",
+      "price": "150000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fquay-bep.jpg?alt=media&token=be6a1004-af16-44bc-8ef4-79ec88d8a7d7",
+      "quantityStock": "36",
+      "id": 24
+    },
+    {
+      "nameProduct": "Quầy bếp ",
+      "description": "kệ bằng gỗ bền sạch phù hợp không gian nhỏ màu trắng",
+      "price": "250000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fquay-bep2.jpg?alt=media&token=85c14c21-dfcb-43d4-8979-3c07f2f03d3b",
+      "quantityStock": "28",
+      "id": 25
+    },
+    {
+      "nameProduct": "Quầy bếp ",
+      "description": "kệ bằng gỗ bền sạch phù hợp không gian nhỏ màu trắng",
+      "price": "2000000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fquay-bep3.jpg?alt=media&token=0cb25ba0-8a37-4a6a-b823-e176c5ca579f",
+      "quantityStock": "30",
+      "id": 26
+    },
+    {
+      "nameProduct": "Quầy bếp ",
+      "description": "kệ bằng gỗ bền sạch phù hợp không gian nhỏ màu trắng",
+      "price": "2100000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fquay-bep4.jpg?alt=media&token=08924039-5a74-43d1-9d2f-978a0245974f",
+      "quantityStock": "26",
+      "id": 27
+    },
+    {
+      "nameProduct": "Quầy bếp ",
+      "description": "kệ bằng gỗ bền sạch phù hợp không gian nhỏ màu vàng",
+      "price": "2100000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fquay-bep5.jpg?alt=media&token=dfd7223a-9725-4d34-9499-59b8d4ae3a85",
+      "quantityStock": "23",
+      "id": 28
+    },
+    {
+      "nameProduct": "Thớt gỗ",
+      "description": "thớt bằng gỗ bền sạch nhỏ màu vàng",
+      "price": "300000",
+      "nameCategory": "Phòng bếp",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fthot-bep.jpg?alt=media&token=fcb85175-7aa2-4356-959c-e3a486937eda",
+      "quantityStock": "23",
+      "id": 29
+    },
+    {
+      "nameProduct": "bàn trang điểm",
+      "description": "bàn trang điểm nhỏ làm bằng gỗ",
+      "price": "1200000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-trang-diem2.jpg?alt=media&token=49e32f1d-4430-4f1c-9eff-1d5e91fcab8e",
+      "quantityStock": "23",
+      "id": 30
+    },
+    {
+      "nameProduct": "Bàn trang điểm",
+      "description": "bàn trang điểm lớn làm bằng gỗ",
+      "price": "1700000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-trang-diem3.jpg?alt=media&token=13225e71-0268-4904-8260-30bac5048c25",
+      "quantityStock": "23",
+      "id": 31
+    },
+    {
+      "nameProduct": "Bàn trang điểm",
+      "description": "bàn trang điểm lớn làm bằng gỗ màu trắng",
+      "price": "1700000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-trang-diem4.jpg?alt=media&token=a631bad3-bb15-41bc-9a7b-1f3914aa1711",
+      "quantityStock": "23",
+      "id": 32
+    },
+    {
+      "nameProduct": "Bàn trang điểm",
+      "description": "bàn trang điểm lớn làm bằng gỗ màu trắng",
+      "price": "1600000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-trang-diem5.jpg?alt=media&token=5761bbd4-d4fa-46c8-986e-35264fd74a91",
+      "quantityStock": "28",
+      "id": 33
+    },
+    {
+      "nameProduct": "Bàn trang điểm",
+      "description": "bàn trang điểm lớn làm bằng gỗ màu trắng",
+      "price": "1600000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-trang-diem-ngu1.jpg?alt=media&token=1d71a9b8-2f9f-4728-a893-b2c12ee7c78a",
+      "quantityStock": "28",
+      "id": 34
+    },
+    {
+      "nameProduct": "Gương trang điểm",
+      "description": "gương trang điểm trằng sáng",
+      "price": "600000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fguong2.jpg?alt=media&token=b3a2c4a2-339a-4055-877f-bfe2ab2507d8",
+      "quantityStock": "38",
+      "id": 35
+    },
+    {
+      "nameProduct": "Gương trang điểm",
+      "description": "gương trang điểm trằng sáng tròn",
+      "price": "700000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fguong3.jpg?alt=media&token=09670a9a-fd45-43eb-b25a-fec92ff0813a",
+      "quantityStock": "38",
+      "id": 36
+    },
+    {
+      "nameProduct": "Gương trang điểm",
+      "description": "gương trang điểm trằng sáng hình elip",
+      "price": "650000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fguong4.jpg?alt=media&token=9d2815db-41c0-416f-83c3-ecd710f89cf1",
+      "quantityStock": "38",
+      "id": 37
+    },
+    {
+      "nameProduct": "Gương trang điểm",
+      "description": "gương trang điểm trằng sáng hình vuông",
+      "price": "650000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fguong-ngu.jpg?alt=media&token=cf32e319-34f1-42c6-ac1a-b4ec2e7e9bcd",
+      "quantityStock": "38",
+      "id": 38
+    },
+    {
+      "nameProduct": "Giường ngủ",
+      "description": "Giường ngủ êm ấm",
+      "price": "6000000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fgiuong-ngu4.jpg?alt=media&token=b2c66c55-6879-40d0-931b-1da04cfdb5aa",
+      "quantityStock": "38",
+      "id": 39
+    },
+    {
+      "nameProduct": "Giường ngủ",
+      "description": "Giường ngủ êm ấm bằng gỗ",
+      "price": "6300000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fgiuong-ngu.jpg?alt=media&token=b13809e0-352b-439d-b401-de8ca15e7dae",
+      "quantityStock": "38",
+      "id": 40
+    },
+    {
+      "nameProduct": "Giường ngủ",
+      "description": "Giường ngủ êm ấm bằng gỗ",
+      "price": "6300000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fgiuong-ngu1.jpg?alt=media&token=f63d67ca-17f4-4405-a66b-e876bc5736cd",
+      "quantityStock": "38",
+      "id": 41
+    },
+    {
+      "nameProduct": "Giường ngủ",
+      "description": "Giường ngủ êm ấm bằng gỗ",
+      "price": "7300000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fgiuong-ngu2.jpg?alt=media&token=479712fd-4d3e-487d-ab76-f2a77026d647",
+      "quantityStock": "30",
+      "id": 42
+    },
+    {
+      "nameProduct": "Giường ngủ",
+      "description": "Giường ngủ êm ấm bằng gỗ",
+      "price": "8300000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fgiuong-ngu3.jpg?alt=media&token=bee86e9b-19b6-48ca-ac37-7a0daa07b4a1",
+      "quantityStock": "27",
+      "id": 43
+    },
+    {
+      "nameProduct": "Tủ Quần áo",
+      "description": "Tủ quần áo bằng gỗ",
+      "price": "8300000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Ftu-ngu.png?alt=media&token=0d4bbca0-6cb3-48c5-a504-48d353b0a275",
+      "quantityStock": "27",
+      "id": 44
+    },
+    {
+      "nameProduct": "Tủ Quần áo",
+      "description": "Tủ quần áo bằng gỗ",
+      "price": "6300000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Ftu-ngu1.jpg?alt=media&token=847b1e9e-c51d-480a-b021-b905abcd1e8d",
+      "quantityStock": "27",
+      "id": 45
+    },
+    {
+      "nameProduct": "Tủ Quần áo",
+      "description": "Tủ quần áo bằng gỗ",
+      "price": "5300000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Ftu-ngu2.jpg?alt=media&token=afd86d14-a97f-4f7c-9828-601582fb86b6",
+      "quantityStock": "27",
+      "id": 46
+    },
+    {
+      "nameProduct": "Tủ Quần áo",
+      "description": "Tủ quần áo bằng gỗ",
+      "price": "4300000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Ftu-ngu3.jpg?alt=media&token=6cbe52cc-903d-491f-a937-44da22214f53",
+      "quantityStock": "27",
+      "id": 47
+    },
+    {
+      "nameProduct": "Tủ Quần áo",
+      "description": "Tủ quần áo bằng gỗ",
+      "price": "1300000",
+      "nameCategory": "Phòng ngủ",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Ftreo-quan-ao.jpg?alt=media&token=8f0b9bfd-f774-47f8-97aa-71831246f621",
+      "quantityStock": "20",
+      "id": 48
+    },
+    {
+      "nameProduct": "Bàn làm việc",
+      "description": "Bàn làm việc bằng gỗ nhỏ",
+      "price": "1300000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-lam-viec.jpg?alt=media&token=1bc203f2-423a-4f45-9bbb-d0bce7565ca8",
+      "quantityStock": "20",
+      "id": 49
+    },
+    {
+      "nameProduct": "Bàn làm việc",
+      "description": "Bàn làm việc bằng gỗ nhỏ",
+      "price": "1600000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-lam-viec1.jpg?alt=media&token=c17117d1-4cf7-4d61-a0a0-099d63cb18a8",
+      "quantityStock": "20",
+      "id": 50
+    },
+    {
+      "nameProduct": "Bàn làm việc",
+      "description": "Bàn làm việc bằng gỗ nhỏ",
+      "price": "1700000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-lam-viec2.jpg?alt=media&token=9f9c7d1c-5182-48fe-8cb1-aac2afc8e5c2",
+      "quantityStock": "25",
+      "id": 51
+    },
+    {
+      "nameProduct": "Bàn làm việc",
+      "description": "Bàn làm việc bằng gỗ nhỏ",
+      "price": "1500000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-lam-viec3.jpg?alt=media&token=54df2cd4-dbcf-4d85-9eba-c0f1d33d3581",
+      "quantityStock": "25",
+      "id": 52
+    },
+    {
+      "nameProduct": "Bàn làm việc",
+      "description": "Bàn làm việc bằng gỗ nhỏ",
+      "price": "2500000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fban-lam-viec4.jpg?alt=media&token=9e75b4ac-97dd-4d36-b3b0-ca3b9780656e",
+      "quantityStock": "24",
+      "id": 53
+    },
+    {
+      "nameProduct": "Ghế làm việc",
+      "description": "Ghế làm việc bằng gỗ nhỏ",
+      "price": "500000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fghe-go-van-phong1.jpg?alt=media&token=7feaff05-6c49-4033-87a5-e039db6a5d1c",
+      "quantityStock": "24",
+      "id": 54
+    },
+    {
+      "nameProduct": "Ghế làm việc",
+      "description": "Ghế làm việc bằng gỗ nhỏ",
+      "price": "550000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fghe-go-van-phong2.jpg?alt=media&token=37b31319-169e-4d0a-920b-543eb7cab9ec",
+      "quantityStock": "24",
+      "id": 55
+    },
+    {
+      "nameProduct": "Kệ sách",
+      "description": "Kệ làm việc bằng gỗ nhỏ",
+      "price": "1500000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-sach-1.jpg?alt=media&token=43da2f62-96b1-493c-9a03-97f2cc53e1b1",
+      "quantityStock": "23",
+      "id": 56
+    },
+    {
+      "nameProduct": "Kệ sách",
+      "description": "Kệ sách  bằng gỗ ",
+      "price": "1500000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-sach-2.jpg?alt=media&token=526e9b0b-0feb-4979-b95a-57372e06c568",
+      "quantityStock": "23",
+      "id": 57
+    },
+    {
+      "nameProduct": "Kệ sách",
+      "description": "Kệ sách  bằng gỗ ",
+      "price": "2000000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-sach-4.jpg?alt=media&token=d32a3e33-e6f1-4ad1-9856-4d13890ab9e4",
+      "quantityStock": "21",
+      "id": 58
+    },
+    {
+      "nameProduct": "Kệ sách",
+      "description": "Kệ sách  bằng gỗ ",
+      "price": "1900000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-sach-5.jpg?alt=media&token=7c413b06-7d18-4774-a4eb-b3ef58a1be2d",
+      "quantityStock": "21",
+      "id": 59
+    },
+    {
+      "nameProduct": "Kệ sách",
+      "description": "Kệ sách  bằng gỗ ",
+      "price": "1900000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-sach-6.jpg?alt=media&token=0daae5a5-a5c1-4a1a-854d-93e1f2de8ca8",
+      "quantityStock": "26",
+      "id": 60
+    },
+    {
+      "nameProduct": "Kệ sách",
+      "description": "Kệ sách  bằng gỗ ",
+      "price": "2300000",
+      "nameCategory": "Phòng làm việc",
+      "rate": 5,
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/project-img--interior.appspot.com/o/images%2Fke-sach-13.jpg?alt=media&token=edbd4c28-d99a-486b-871e-76c8abb73313",
+      "quantityStock": "29",
+      "id": 61
+    }
+  ],
+  "Categories": [
+    {
+      "id": 1,
+      "nameCategory": "Phòng khách",
+      "imgCategory": "https://theme.hstatic.net/200000044142/1000773248/14/collection2_1.png?v=12018"
+    },
+    {
+      "id": 2,
+      "nameCategory": "Phòng bếp",
+      "imgCategory": "https://theme.hstatic.net/200000044142/1000773248/14/collection2_5.png?v=12018"
+    },
+    {
+      "id": 3,
+      "nameCategory": "Phòng ngủ",
+      "imgCategory": "https://theme.hstatic.net/200000044142/1000773248/14/collection2_2.png?v=12018"
+    },
+    {
+      "id": 4,
+      "nameCategory": "Phòng làm việc",
+      "imgCategory": "https://theme.hstatic.net/200000044142/1000773248/14/collection2_5.png?v=12018"
     }
   ]
 }

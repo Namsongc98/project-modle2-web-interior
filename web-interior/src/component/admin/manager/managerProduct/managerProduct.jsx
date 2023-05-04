@@ -3,7 +3,9 @@ import "../admin.scss";
 import { storage } from "../../../../firebase/firebase";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
+import EditProduct from "./editProduct";
 
 const ManagerProduct = () => {
   const [nameProduct, setNameProduct] = useState("");
@@ -12,8 +14,9 @@ const ManagerProduct = () => {
   const [descriptionProduct, setDescriptionProduct] = useState("");
   const [nameCategory, setNameCategory] = useState("");
   const [imgProduct, setImgProduct] = useState(null);
- 
+  const navigate = useNavigate();
   const [dataProduct, setDataProduct] = useState([]);
+  const [isModal, setIsModal] = useState(false);
 
   const imgListRef = ref(storage, "images/");
 
@@ -46,7 +49,6 @@ const ManagerProduct = () => {
       });
     });
   };
- 
 
   function getDataProduct() {
     axios
@@ -62,9 +64,12 @@ const ManagerProduct = () => {
       .delete(`http://localhost:3000/products/${productId}`)
       .then(getDataProduct());
   };
+
   return (
     <>
       <div className="flex">
+        {isModal && <EditProduct closeModal={setIsModal} />}
+
         <div className="wp-form">
           <h2 className="title-form font-medium text-sm">Nhập sản phẩm</h2>
           <div>
@@ -92,14 +97,16 @@ const ManagerProduct = () => {
                     Sản phẩm thuộc:
                   </label>
                   <br />
+                  <h1>{nameCategory}</h1>
                   <select
                     className="inputProduct"
                     onInput={(e) => setNameCategory(e.target.value)}
+                    value={nameCategory}
                   >
-                    <option value={"Phòng khách"}>Phòng khách</option>
-                    <option value={"Phòng bếp"}>Phòng bếp</option>
-                    <option value={"Phòng ngủ"}>Phòng ngủ</option>
-                    <option value={"Phòng làm việc"}>Phòng làm việc</option>
+                    <option>Phòng khách</option>
+                    <option>Phòng bếp</option>
+                    <option>Phòng ngủ</option>
+                    <option>Phòng làm việc</option>
                   </select>
                 </div>
               </div>
@@ -171,15 +178,15 @@ const ManagerProduct = () => {
         <table className="min-w-full table-product ">
           <thead className="th-titlePro max-w-full thead-product">
             <tr className="  min-w-{1200px} h-max  tr-product">
-              <th > STT</th>
-              <th >Tên sản phẩm</th>
-              <th >Loại sản phẩm</th>
-              <th >Giá sản phẩm</th>
-              <th >Số lượng sản phẩm</th>
-              <th >Hình ảnh thể hiện</th>
-              <th >Mô tả sản phẩm</th>
-              <th > Edit</th>
-              <th > Delete</th>
+              <th> STT</th>
+              <th>Tên sản phẩm</th>
+              <th>Loại sản phẩm</th>
+              <th>Giá sản phẩm</th>
+              <th>Số lượng sản phẩm</th>
+              <th>Hình ảnh thể hiện</th>
+              <th>Mô tả sản phẩm</th>
+              <th> Edit</th>
+              <th> Delete</th>
             </tr>
           </thead>
           <tbody className="th-titlePro max-w-full">
@@ -188,27 +195,31 @@ const ManagerProduct = () => {
               dataProduct.map((itemProduct, index) => {
                 return (
                   <tr key={index} className="tr-product">
-                    <td >{itemProduct.id}</td>
-                    <td >{itemProduct.nameProduct}</td>
-                    <td >{itemProduct.nameCategory}</td>
-                    <td >{itemProduct.price}</td>
-                    <td >{itemProduct.quantityStock}</td>
+                    <td>{index + 1}</td>
+                    <td>{itemProduct.nameProduct}</td>
+                    <td>{itemProduct.nameCategory}</td>
+                    <td>{itemProduct.price}</td>
+                    <td>{itemProduct.quantityStock}</td>
 
                     <td>
                       <img src={itemProduct.imageUrl} className="w-8" />
                     </td>
 
                     <td>{itemProduct.description}</td>
-                   
-                      <td>
-                        <Link to={`/admin/managerproduct/editproduct/${itemProduct.id}`} className="btn">
+
+                    <td>
+                      <Link
+                        to={`/admin/managerproduct/editProduct/${itemProduct.id}`}
+                        
+                        className="btn"
+                      >
                         Edit
-                        </Link>
-                      </td>
-                  
+                      </Link>
+                    </td>
+
                     <td>
                       <button
-                      className="btn"
+                        className="btn"
                         onClick={() => handleDeleteProduct(itemProduct.id)}
                       >
                         Delete
